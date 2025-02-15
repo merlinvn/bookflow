@@ -31,6 +31,28 @@ export default {
           dark: '#ffffff',
         }
       },
+      keyframes: {
+        'progress-right': {
+          '0%': { width: '0%', left: '0' },
+          '50%': { width: '100%', left: '0' },
+          '100%': { width: '0%', left: '100%' }
+        },
+        'progress-left': {
+          '0%': { width: '0%', right: '0' },
+          '50%': { width: '100%', right: '0' },
+          '100%': { width: '0%', right: '100%' }
+        },
+        'progress-fade': {
+          '0%': { opacity: '0', width: '0%' },
+          '50%': { opacity: '1', width: '100%' },
+          '100%': { opacity: '0', width: '100%' }
+        }
+      },
+      animation: {
+        'progress-right': 'progress-right 1s ease-in-out infinite',
+        'progress-left': 'progress-left 1s ease-in-out infinite',
+        'progress-fade': 'progress-fade 1s ease-in-out infinite'
+      }
     },
   },
   plugins: [

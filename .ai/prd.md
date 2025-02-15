@@ -8,7 +8,7 @@ Build a self-publishing platform using **Next.js** and **MDX** that allows a sin
 
 ## Tasks
 
-Below is a breakdown of the major development “stories” or tasks, following a structure similar to the example PRD.
+Below is a breakdown of the major development "stories" or tasks, following a structure similar to the example PRD.
 
 ---
 
@@ -74,7 +74,7 @@ Below is a breakdown of the major development “stories” or tasks, following 
 
 - **Requirements**
 
-  1. Dynamically determine the next and previous chapters based on the current chapter’s position.
+  1. Dynamically determine the next and previous chapters based on the current chapter's position.
   2. Display these navigation links in a consistent location (e.g., at the bottom of each chapter).
   3. Ensure links accurately update when chapters are added or removed.
 
@@ -104,13 +104,13 @@ Below is a breakdown of the major development “stories” or tasks, following 
 ### Story 6: Dark/Light Mode Toggle
 
 - **Objective**  
-  Provide a user-facing toggle to switch between dark mode and light mode, leveraging Tailwind’s theme configuration.
+  Provide a user-facing toggle to switch between dark mode and light mode, leveraging Tailwind's theme configuration.
 
 - **Requirements**
 
   1. Place a visual toggle (button or switch) in a global header or navigation component.
-  2. Persist the user’s theme preference (e.g., localStorage or cookie).
-  3. Support Tailwind’s dark variant styling (e.g., `.dark` class on `<html>` or `<body>`).
+  2. Persist the user's theme preference (e.g., localStorage or cookie).
+  3. Support Tailwind's dark variant styling (e.g., `.dark` class on `<html>` or `<body>`).
 
 - **Acceptance Criteria**
   - Users can switch themes at any time, and the UI updates instantly.
@@ -185,3 +185,36 @@ Below is a breakdown of the major development “stories” or tasks, following 
 With these stories and tasks, we will deliver a minimal viable platform for publishing multiple books and chapters with a user-friendly, modern interface. All critical tasks are divided into discrete steps that ensure both reliability (through testing) and a seamless publishing workflow (via GitHub Actions).
 
 Once the MVP is complete, we can expand to additional features (search, comments, multi-author flows) without major rework, thanks to the flexible and scalable architecture provided by **Next.js**, **TailwindCSS**, and **GitHub Actions** for automated deployments.
+
+## Component Architecture
+
+### Core Components
+1. **Navigation Components**
+   - `ChapterNavigation`: Handles chapter-to-chapter navigation
+   - `ChapterProgress`: Shows reading progress and navigation controls
+   - `TableOfContents`: Provides section navigation within chapters
+
+2. **UI Components**
+   - `LoadingOverlay`: Reusable loading state indicator
+   - `ChapterCard`: Displays chapter information in lists
+   - `BookHeader`: Shows book metadata and navigation
+   - `ThemeToggle`: Manages dark/light mode switching
+   - `CodeBlock`: Syntax highlighting for code snippets
+
+3. **Layout Components**
+   - `ChapterContent`: Main chapter content container
+   - `BookContent`: Book details and chapter list container
+
+### Component Organization
+- Components follow single responsibility principle
+- Shared components are extracted for reusability
+- Client/server components are properly separated
+- State management is lifted to appropriate levels
+
+### Best Practices
+- ESLint rules are enforced for code quality
+- TypeScript types are properly defined
+- Components use default exports
+- Unused code is removed
+- Props are properly typed
+- Loading states are consistent

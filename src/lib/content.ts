@@ -1,7 +1,8 @@
-import fs from 'fs';
+import { promises as fs } from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { Book, Chapter, ChapterFrontmatter, ContentError } from '@/types/content';
+import 'server-only';
 
 const CONTENT_DIR = path.join(process.cwd(), 'content');
 
@@ -10,17 +11,20 @@ const CONTENT_DIR = path.join(process.cwd(), 'content');
  */
 export async function getBooks(): Promise<Book[]> {
   try {
-    const bookDirs = fs.readdirSync(CONTENT_DIR);
-    const books = bookDirs.map((dir) => {
+    const bookDirs = await fs.readdir(CONTENT_DIR);
+    const books = await Promise.all(bookDirs.map(async (dir) => {
       const bookPath = path.join(CONTENT_DIR, dir, 'book.json');
-      if (fs.existsSync(bookPath)) {
-        const bookContent = fs.readFileSync(bookPath, 'utf-8');
+      try {
+        const bookContent = await fs.readFile(bookPath, 'utf-8');
         return JSON.parse(bookContent) as Book;
+      } catch {
+        return null;
       }
-      return null;
-    }).filter((book): book is Book => book !== null);
+    }));
 
-    return books.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+    return books
+      .filter((book): book is Book => book !== null)
+      .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
   } catch (error) {
     console.error('Error getting books:', error);
     return [];
@@ -33,11 +37,7 @@ export async function getBooks(): Promise<Book[]> {
 export async function getBook(bookId: string): Promise<Book | null> {
   try {
     const bookPath = path.join(CONTENT_DIR, bookId, 'book.json');
-    if (!fs.existsSync(bookPath)) {
-      return null;
-    }
-
-    const bookContent = fs.readFileSync(bookPath, 'utf-8');
+    const bookContent = await fs.readFile(bookPath, 'utf-8');
     const book = JSON.parse(bookContent) as Book;
     book.chapters = await getChapters(bookId);
 
@@ -54,16 +54,12 @@ export async function getBook(bookId: string): Promise<Book | null> {
 export async function getChapters(bookId: string): Promise<Chapter[]> {
   try {
     const chaptersDir = path.join(CONTENT_DIR, bookId, 'chapters');
-    if (!fs.existsSync(chaptersDir)) {
-      return [];
-    }
+    const chapterFiles = await fs.readdir(chaptersDir);
+    const mdxFiles = chapterFiles.filter(file => file.endsWith('.mdx'));
 
-    const chapterFiles = fs.readdirSync(chaptersDir)
-      .filter(file => file.endsWith('.mdx'));
-
-    const chapters = chapterFiles.map((file) => {
+    const chapters = await Promise.all(mdxFiles.map(async (file) => {
       const chapterPath = path.join(chaptersDir, file);
-      const content = fs.readFileSync(chapterPath, 'utf-8');
+      const content = await fs.readFile(chapterPath, 'utf-8');
       const { data, content: mdxContent } = matter(content);
       const frontmatter = data as ChapterFrontmatter;
 
@@ -76,7 +72,7 @@ export async function getChapters(bookId: string): Promise<Chapter[]> {
         slug: path.basename(file, '.mdx'),
         content: mdxContent,
       } as Chapter;
-    });
+    }));
 
     // Sort chapters by order and add previous/next links
     const sortedChapters = chapters.sort((a, b) => a.order - b.order);
@@ -115,29 +111,35 @@ export async function getChapter(bookId: string, chapterId: string): Promise<Cha
 /**
  * Validate the content directory structure
  */
-export function validateContentStructure(): ContentError | null {
+export async function validateContentStructure(): Promise<ContentError | null> {
   try {
-    if (!fs.existsSync(CONTENT_DIR)) {
+    try {
+      await fs.access(CONTENT_DIR);
+    } catch {
       return {
         message: 'Content directory does not exist',
         code: 'NOT_FOUND',
       };
     }
 
-    const bookDirs = fs.readdirSync(CONTENT_DIR);
+    const bookDirs = await fs.readdir(CONTENT_DIR);
     for (const dir of bookDirs) {
       const bookPath = path.join(CONTENT_DIR, dir);
       const bookJsonPath = path.join(bookPath, 'book.json');
       const chaptersDir = path.join(bookPath, 'chapters');
 
-      if (!fs.existsSync(bookJsonPath)) {
+      try {
+        await fs.access(bookJsonPath);
+      } catch {
         return {
           message: `Missing book.json in ${dir}`,
           code: 'INVALID_CONTENT',
         };
       }
 
-      if (!fs.existsSync(chaptersDir)) {
+      try {
+        await fs.access(chaptersDir);
+      } catch {
         return {
           message: `Missing chapters directory in ${dir}`,
           code: 'INVALID_CONTENT',

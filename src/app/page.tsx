@@ -1,68 +1,62 @@
-import Link from "next/link";
+import { getBooks } from '@/lib/content';
+import Image from 'next/image';
+import Link from 'next/link';
 
-export default function Home() {
+export default async function Home() {
+  const books = await getBooks();
+
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* Hero Section */}
-      <main className="flex-1 container mx-auto px-4 py-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent">
-            Welcome to BookFlow
-          </h1>
-          <p className="text-lg md:text-xl mb-8 text-text-light dark:text-text-dark">
-            A modern self-publishing platform for authors to share their stories with the world.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/books"
-              className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 transition-colors"
-            >
-              Browse Books
-            </Link>
-            <Link
-              href="/about"
-              className="inline-flex items-center justify-center px-6 py-3 border border-primary-600 text-base font-medium rounded-md text-primary-600 dark:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors"
-            >
-              Learn More
-            </Link>
-          </div>
-        </div>
-
-        {/* Features Section */}
-        <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <div className="p-6 rounded-lg border border-primary-100 dark:border-primary-900 bg-white/50 dark:bg-black/50">
-            <h3 className="text-xl font-semibold mb-4 text-primary-600 dark:text-primary-400">
-              📚 Multiple Books
-            </h3>
-            <p className="text-text-light dark:text-text-dark">
-              Host and manage multiple books in one place with easy navigation and organization.
-            </p>
-          </div>
-          <div className="p-6 rounded-lg border border-primary-100 dark:border-primary-900 bg-white/50 dark:bg-black/50">
-            <h3 className="text-xl font-semibold mb-4 text-primary-600 dark:text-primary-400">
-              📖 MDX Support
-            </h3>
-            <p className="text-text-light dark:text-text-dark">
-              Write your content in MDX, combining the simplicity of Markdown with the power of React components.
-            </p>
-          </div>
-          <div className="p-6 rounded-lg border border-primary-100 dark:border-primary-900 bg-white/50 dark:bg-black/50">
-            <h3 className="text-xl font-semibold mb-4 text-primary-600 dark:text-primary-400">
-              🎨 Beautiful Design
-            </h3>
-            <p className="text-text-light dark:text-text-dark">
-              Enjoy a beautiful reading experience with customizable themes and responsive design.
-            </p>
-          </div>
-        </div>
-      </main>
-
-      {/* Footer */}
-      <footer className="border-t border-primary-100 dark:border-primary-900 py-8 mt-16">
-        <div className="container mx-auto px-4 text-center text-sm text-text-light dark:text-text-dark">
-          <p>Built with Next.js and MDX • Open Source on GitHub</p>
-        </div>
-      </footer>
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-4xl font-bold mb-8 text-center bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent">
+        Welcome to BookFlow
+      </h1>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {books.map((book) => (
+          <Link
+            key={book.id}
+            href={`/books/${book.id}`}
+            className="group hover:no-underline"
+          >
+            <div className="border border-primary-100 dark:border-primary-900 rounded-lg overflow-hidden transition-transform hover:scale-105">
+              <div className="relative h-48 bg-primary-50 dark:bg-primary-900/30">
+                <Image
+                  src={book.coverImage}
+                  alt={book.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h2 className="text-xl font-semibold mb-2 text-primary-600 dark:text-primary-400 group-hover:text-primary-500">
+                  {book.title}
+                </h2>
+                <p className="text-sm text-text-light dark:text-text-dark mb-4">
+                  {book.description}
+                </p>
+                <div className="flex items-center justify-between text-sm">
+                  <span className="text-primary-600 dark:text-primary-400">
+                    By {book.author}
+                  </span>
+                  <span className="text-text-light dark:text-text-dark opacity-75">
+                    {new Date(book.publishedAt).toLocaleDateString()}
+                  </span>
+                </div>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {book.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-2 py-1 text-xs rounded-full bg-primary-50 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
