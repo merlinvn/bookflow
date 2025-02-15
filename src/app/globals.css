@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  * {
+    @apply transition-colors duration-200;
+  }
+
+  body {
+    @apply antialiased;
+  }
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background-light dark:bg-background-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-200 dark:bg-primary-800 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-300 dark:bg-primary-700;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

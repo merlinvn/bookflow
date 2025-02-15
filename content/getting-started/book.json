@@ -1,0 +1,10 @@
+{
+  "id": "getting-started",
+  "title": "Getting Started with BookFlow",
+  "description": "Learn how to use BookFlow to publish your books online.",
+  "author": "The BookFlow Team",
+  "coverImage": "/covers/getting-started.jpg",
+  "tags": ["guide", "tutorial", "documentation"],
+  "publishedAt": "2024-02-15",
+  "updatedAt": "2024-02-15"
+} 
