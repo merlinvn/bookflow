@@ -5,6 +5,7 @@ export interface Chapter {
   content: string;
   description?: string;
   order: number;
+  status?: 'writing' | 'published';
   previousChapter?: {
     slug: string;
     title: string;

@@ -18,6 +18,7 @@ export interface Chapter {
   order: number;
   slug: string;
   content: string;
+  status?: 'writing' | 'published';
   previousChapter?: {
     id: string;
     title: string;

@@ -1,0 +1,65 @@
+{
+  "id": "sao-mai",
+  "title": "Sao Mai và Bí Mật Của Rừng Xanh",
+  "description": "Hành trình phiêu lưu của cô bé Sao Mai cùng những người bạn kỳ diệu trong khu rừng cổ tích, nơi cô học được những bài học quý giá về tình bạn, lòng dũng cảm và bảo vệ thiên nhiên.",
+  "author": "BookFlow Team",
+  "coverImage": "https://picsum.photos/800/600",
+  "tags": ["vietnamese", "children", "adventure", "nature", "friendship"],
+  "publishedAt": "2024-03-15T00:00:00.000Z",
+  "updatedAt": "2024-03-15",
+  "chapters": [
+    {
+      "id": "01-gap-go-sao-mai",
+      "title": "Gặp Gỡ Sao Mai",
+      "description": "Khám phá thế giới của cô bé Sao Mai và khởi đầu cuộc phiêu lưu kỳ diệu của cô trong khu rừng cổ tích",
+      "slug": "01-gap-go-sao-mai",
+      "order": 1
+    },
+    {
+      "id": "02-vao-rung-sau",
+      "title": "Vào Rừng Sâu",
+      "description": "Sao Mai bắt đầu cuộc phiêu lưu trong khu rừng cổ tích và gặp gỡ những người bạn đặc biệt đầu tiên",
+      "slug": "02-vao-rung-sau",
+      "order": 2
+    },
+    {
+      "id": "03-cay-dai-thu",
+      "title": "Cây Đại Thụ Ngàn Năm",
+      "description": "Sao Mai và những người bạn gặp Cây Đại Thụ Ngàn Năm và đối mặt với thử thách đầu tiên từ những Bóng Đen",
+      "slug": "03-cay-dai-thu",
+      "order": 3
+    },
+    {
+      "id": "04-thung-lung-thuy-tinh",
+      "title": "Thung Lũng Thủy Tinh",
+      "description": "Cuộc phiêu lưu trong thung lũng kỳ diệu, nơi mọi thứ đều làm bằng pha lê và thử thách thứ hai đang chờ đợi",
+      "slug": "04-thung-lung-thuy-tinh",
+      "order": 4,
+      "status": "writing"
+    },
+    {
+      "id": "05-giac-mo-mu-suong",
+      "title": "Giấc Mơ Mù Sương",
+      "description": "Sao Mai và các bạn lạc vào vùng đất của những giấc mơ, nơi ranh giới giữa thực và ảo trở nên mờ nhạt",
+      "slug": "05-giac-mo-mu-suong",
+      "order": 5,
+      "status": "writing"
+    },
+    {
+      "id": "06-hang-dong-bang-gia",
+      "title": "Hang Động Băng Giá",
+      "description": "Cuộc đối đầu cuối cùng với Nữ Hoàng Bóng Tối trong hang động băng giá để giành lại Viên Ngọc Sinh Mệnh",
+      "slug": "06-hang-dong-bang-gia",
+      "order": 6,
+      "status": "writing"
+    },
+    {
+      "id": "07-tro-ve-nha",
+      "title": "Trở Về Nhà",
+      "description": "Hành trình trở về đầy cảm động của Sao Mai và những người bạn, mang theo những bài học quý giá về tình bạn và lòng dũng cảm",
+      "slug": "07-tro-ve-nha",
+      "order": 7,
+      "status": "writing"
+    }
+  ]
+} 

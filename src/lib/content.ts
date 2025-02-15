@@ -53,29 +53,64 @@ export async function getBook(bookId: string): Promise<Book | null> {
  */
 export async function getChapters(bookId: string): Promise<Chapter[]> {
   try {
+    // First, get the book metadata to get all chapters including upcoming ones
+    const bookPath = path.join(CONTENT_DIR, bookId, 'book.json');
+    const bookContent = await fs.readFile(bookPath, 'utf-8');
+    const book = JSON.parse(bookContent) as Book;
+    const chaptersFromMetadata = book.chapters || [];
+
+    // Then, get the actual chapter files
     const chaptersDir = path.join(CONTENT_DIR, bookId, 'chapters');
-    const chapterFiles = await fs.readdir(chaptersDir);
-    const mdxFiles = chapterFiles.filter(file => file.endsWith('.mdx'));
+    let publishedChapters: Chapter[] = [];
+    
+    try {
+      const chapterFiles = await fs.readdir(chaptersDir);
+      const mdxFiles = chapterFiles.filter(file => file.endsWith('.mdx'));
 
-    const chapters = await Promise.all(mdxFiles.map(async (file) => {
-      const chapterPath = path.join(chaptersDir, file);
-      const content = await fs.readFile(chapterPath, 'utf-8');
-      const { data, content: mdxContent } = matter(content);
-      const frontmatter = data as ChapterFrontmatter;
+      publishedChapters = await Promise.all(mdxFiles.map(async (file) => {
+        const chapterPath = path.join(chaptersDir, file);
+        const content = await fs.readFile(chapterPath, 'utf-8');
+        const { data, content: mdxContent } = matter(content);
+        const frontmatter = data as ChapterFrontmatter;
+        const chapterId = path.basename(file, '.mdx');
 
+        return {
+          id: chapterId,
+          bookId,
+          title: frontmatter.title,
+          description: frontmatter.description,
+          order: frontmatter.order,
+          slug: chapterId,
+          content: mdxContent,
+          status: 'published'
+        } as Chapter;
+      }));
+    } catch (error) {
+      console.error(`Error reading chapter files for book ${bookId}:`, error);
+    }
+
+    // Merge published chapters with metadata chapters
+    const mergedChapters = chaptersFromMetadata.map(metaChapter => {
+      const publishedChapter = publishedChapters.find(ch => ch.id === metaChapter.id);
+      if (publishedChapter) {
+        return {
+          ...publishedChapter,
+          title: metaChapter.title || publishedChapter.title,
+          description: metaChapter.description || publishedChapter.description,
+          order: metaChapter.order || publishedChapter.order,
+          status: 'published' as const
+        };
+      }
       return {
-        id: path.basename(file, '.mdx'),
+        ...metaChapter,
         bookId,
-        title: frontmatter.title,
-        description: frontmatter.description,
-        order: frontmatter.order,
-        slug: path.basename(file, '.mdx'),
-        content: mdxContent,
-      } as Chapter;
-    }));
+        content: '',
+        status: 'writing' as const
+      };
+    });
 
     // Sort chapters by order and add previous/next links
-    const sortedChapters = chapters.sort((a, b) => a.order - b.order);
+    const sortedChapters = mergedChapters.sort((a, b) => a.order - b.order);
     return sortedChapters.map((chapter, index) => ({
       ...chapter,
       previousChapter: index > 0 ? {
