@@ -1,0 +1,86 @@
+---
+title: Writing with MDX
+description: Master the art of writing engaging content using MDX in BookFlow
+order: 3
+---
+
+# Writing with MDX
+
+MDX is a powerful format that combines Markdown with JSX, allowing you to create rich, interactive content. Let's explore how to use it effectively in BookFlow.
+
+## Markdown Basics
+
+First, let's review basic Markdown syntax:
+
+```markdown
+# Heading 1
+## Heading 2
+### Heading 3
+
+**Bold text**
+*Italic text*
+
+- List item 1
+- List item 2
+
+1. Numbered item 1
+2. Numbered item 2
+
+> Blockquote
+```
+
+## Interactive Components
+
+BookFlow provides several built-in components:
+
+```jsx
+<CodeBlock language="typescript">
+  const greeting = "Hello, BookFlow!";
+  console.log(greeting);
+</CodeBlock>
+
+<Alert type="info">
+  This is an important note!
+</Alert>
+
+<Demo>
+  {/* Interactive demo content */}
+</Demo>
+```
+
+## Code Snippets
+
+Highlight your code with syntax highlighting:
+
+```typescript
+interface Book {
+  title: string;
+  chapters: Chapter[];
+  
+  // Add a new chapter
+  addChapter(chapter: Chapter): void {
+    this.chapters.push(chapter);
+  }
+}
+```
+
+## Custom Components
+
+You can also create custom components:
+
+```jsx
+<CustomComponent prop1="value1" prop2={42}>
+  Children content goes here
+</CustomComponent>
+```
+
+## Best Practices
+
+1. **Structure**: Use headings to create a clear hierarchy
+2. **Components**: Choose appropriate components for your content
+3. **Code**: Use syntax highlighting for better readability
+4. **Interactivity**: Add interactive elements where they enhance learning
+
+## Next Steps
+
+In the next chapter, we'll explore how to enhance your content with images and media. 

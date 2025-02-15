@@ -1,10 +1,47 @@
 {
   "id": "getting-started",
   "title": "Getting Started with BookFlow",
-  "description": "Learn how to use BookFlow to publish your books online.",
+  "description": "Learn how to create, write, and publish your books using BookFlow's powerful platform",
   "author": "The BookFlow Team",
-  "coverImage": "/covers/getting-started.jpg",
+  "coverImage": "https://picsum.photos/800/600",
   "tags": ["guide", "tutorial", "documentation"],
-  "publishedAt": "2024-02-15",
-  "updatedAt": "2024-02-15"
+  "publishedAt": "2024-02-15T00:00:00.000Z",
+  "updatedAt": "2024-02-15",
+  "chapters": [
+    {
+      "id": "01-introduction",
+      "title": "Introduction to BookFlow",
+      "description": "Get started with BookFlow and learn about its key features",
+      "slug": "01-introduction",
+      "order": 1
+    },
+    {
+      "id": "02-creating-your-first-book",
+      "title": "Creating Your First Book",
+      "description": "Learn how to create and structure your first book in BookFlow",
+      "slug": "02-creating-your-first-book",
+      "order": 2
+    },
+    {
+      "id": "03-writing-with-mdx",
+      "title": "Writing with MDX",
+      "description": "Master the art of writing engaging content using MDX in BookFlow",
+      "slug": "03-writing-with-mdx",
+      "order": 3
+    },
+    {
+      "id": "04-adding-media",
+      "title": "Adding Media Content",
+      "description": "Learn how to enhance your books with images, videos, and other media",
+      "slug": "04-adding-media",
+      "order": 4
+    },
+    {
+      "id": "05-publishing",
+      "title": "Publishing Your Book",
+      "description": "Learn how to publish and share your book with the world",
+      "slug": "05-publishing",
+      "order": 5
+    }
+  ]
 } 

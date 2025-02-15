@@ -1,14 +1,14 @@
 import { getBook, getBooks, getChapter } from '@/lib/content';
 import { components } from '@/components/mdx';
-import { MDXRemote } from 'next-mdx-remote/rsc';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { compileMDX } from 'next-mdx-remote/rsc';
 
 interface Props {
-  params: {
+  params: Promise<{
     bookId: string;
     chapterId: string;
-  };
+  }>;
 }
 
 export async function generateStaticParams() {
@@ -31,12 +31,22 @@ export async function generateStaticParams() {
 }
 
 export default async function ChapterPage({ params }: Props) {
-  const chapter = await getChapter(params.bookId, params.chapterId);
-  const book = await getBook(params.bookId);
+  const { bookId, chapterId } = await params;
+  
+  const [chapter, book] = await Promise.all([
+    getChapter(bookId, chapterId),
+    getBook(bookId)
+  ]);
 
   if (!chapter || !book) {
     notFound();
   }
+
+  const { content } = await compileMDX({
+    source: chapter.content,
+    components,
+    options: { parseFrontmatter: true }
+  });
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -58,7 +68,7 @@ export default async function ChapterPage({ params }: Props) {
       {/* Chapter Content */}
       <main className="flex-1 container mx-auto px-4 py-8">
         <article className="prose prose-primary dark:prose-invert max-w-4xl mx-auto">
-          <MDXRemote source={chapter.content} components={components} />
+          {content}
         </article>
       </main>
 

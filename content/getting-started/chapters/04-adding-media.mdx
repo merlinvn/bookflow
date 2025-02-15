@@ -1,0 +1,78 @@
+---
+title: Adding Media Content
+description: Learn how to enhance your books with images, videos, and other media
+order: 4
+---
+
+# Adding Media Content
+
+Rich media content can significantly enhance your book's educational value. Let's explore how to add various types of media to your BookFlow content.
+
+## Images
+
+Adding images is straightforward with our optimized Image component:
+
+```jsx
+<Image
+  src="/path/to/image.jpg"
+  alt="Descriptive text"
+  width={800}
+  height={600}
+/>
+```
+
+Here's an example image:
+
+<Image
+  src="https://picsum.photos/800/400"
+  alt="Sample landscape image"
+  width={800}
+  height={400}
+/>
+
+## Videos
+
+Embed videos from popular platforms:
+
+```jsx
+<Video
+  src="https://example.com/video.mp4"
+  title="Video Title"
+  poster="/thumbnail.jpg"
+/>
+```
+
+## Code Demos
+
+Interactive code demonstrations:
+
+```jsx
+<CodeDemo title="React Component Example">
+  function Welcome({ name }) {
+    return <h1>Hello, {name}!</h1>;
+  }
+</CodeDemo>
+```
+
+## Diagrams
+
+Create diagrams using Mermaid:
+
+```mermaid
+graph TD
+    A[Start] --> B{Is it working?}
+    B -->|Yes| C[Great!]
+    B -->|No| D[Debug]
+    D --> B
+```
+
+## Best Practices
+
+1. **Optimization**: Use appropriate image sizes and formats
+2. **Accessibility**: Always include alt text for images
+3. **Loading**: Consider lazy loading for better performance
+4. **Responsiveness**: Ensure media works on all devices
+
+## Next Steps
+
+Now that you know how to add media, let's explore how to publish and share your book in the next chapter. 

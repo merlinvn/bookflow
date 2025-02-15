@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 interface Props {
-  params: {
+  params: Promise<{
     bookId: string;
-  };
+  }>;
 }
 
 export async function generateStaticParams() {
@@ -17,7 +17,8 @@ export async function generateStaticParams() {
 }
 
 export default async function BookPage({ params }: Props) {
-  const book = await getBook(params.bookId);
+  const { bookId } = await params;
+  const book = await getBook(bookId);
 
   if (!book) {
     notFound();
