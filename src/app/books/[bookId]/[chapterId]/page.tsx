@@ -6,7 +6,9 @@ import { notFound } from 'next/navigation';
 import { compileMDX } from 'next-mdx-remote/rsc';
 import { TableOfContents } from '@/components/TableOfContents';
 import { ReadingProgress } from '@/components/ReadingProgress';
-import { ReadingTools } from '@/components/ReadingTools';
+import { ChapterProgress } from '@/components/ChapterProgress';
+import { ChapterNavigation } from '@/components/ChapterNavigation';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 interface Props {
   params: Promise<{
@@ -65,66 +67,32 @@ export default async function ChapterPage({ params }: Props) {
       {/* Reading Progress */}
       <ReadingProgress bookId={bookId} chapterId={chapterId} />
 
-      {/* Navigation Header */}
-      <header className="border-b border-primary-100 dark:border-primary-900 py-4">
-        <div className="container mx-auto px-4">
-          <Link
-            href={`/books/${book.id}`}
-            className="text-primary-600 dark:text-primary-400 hover:underline mb-2 inline-block"
-          >
-            ← Back to {book.title}
-          </Link>
-          <h1 className="text-3xl font-bold text-primary-600 dark:text-primary-400">
-            {chapter.title}
-          </h1>
-        </div>
-      </header>
-
-      {/* Table of Contents */}
-      <TableOfContents />
-
-      {/* Reading Tools */}
-      <ReadingTools 
+      {/* Chapter Progress and Keyboard Shortcuts */}
+      <ChapterProgress 
         book={book} 
         currentChapter={chapter}
       />
 
+      {/* Theme Toggle */}
+      <ThemeToggle />
+
+      {/* Table of Contents */}
+      <TableOfContents />
+
       {/* Chapter Content */}
-      <main className="flex-1 container mx-auto px-4 py-8">
+      <main className="flex-1 container mx-auto px-4 py-8 mt-20">
         <article className="prose prose-primary dark:prose-invert max-w-4xl mx-auto">
           {content}
         </article>
       </main>
 
       {/* Chapter Navigation */}
-      <footer className="border-t border-primary-100 dark:border-primary-900 py-6 mt-8">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center max-w-4xl mx-auto">
-            {chapter.previousChapter ? (
-              <Link
-                key="prev-chapter"
-                href={`/books/${book.id}/${chapter.previousChapter.slug}`}
-                className="text-primary-600 dark:text-primary-400 hover:underline flex items-center gap-2"
-              >
-                ← {chapter.previousChapter.title}
-              </Link>
-            ) : (
-              <div key="prev-placeholder" aria-hidden="true" />
-            )}
-            {chapter.nextChapter ? (
-              <Link
-                key="next-chapter"
-                href={`/books/${book.id}/${chapter.nextChapter.slug}`}
-                className="text-primary-600 dark:text-primary-400 hover:underline flex items-center gap-2"
-              >
-                {chapter.nextChapter.title} →
-              </Link>
-            ) : (
-              <div key="next-placeholder" aria-hidden="true" />
-            )}
-          </div>
-        </div>
-      </footer>
+      <ChapterNavigation
+        book={book}
+        currentChapter={chapter}
+        showTitles={true}
+        showPreviews={true}
+      />
     </div>
   );
 } 
