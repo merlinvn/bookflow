@@ -67,24 +67,49 @@ Below is a breakdown of the major development "stories" or tasks, following a st
 
 ---
 
-### Story 4: Chapter Navigation (Next/Previous Links)
+### Story 4: Chapter Navigation & Progress
 
 - **Objective**  
-  Add next/previous links for smooth navigation between chapters within a book.
+  Add comprehensive chapter navigation and reading progress features.
 
 - **Requirements**
 
-  1. Dynamically determine the next and previous chapters based on the current chapter's position.
-  2. Display these navigation links in a consistent location (e.g., at the bottom of each chapter).
-  3. Ensure links accurately update when chapters are added or removed.
+  1. Implement next/previous chapter navigation.
+  2. Add reading progress indicator.
+  3. Create chapter progress bar.
+  4. Add keyboard shortcuts for navigation.
+  5. Implement loading states for navigation.
 
 - **Acceptance Criteria**
-  - Reading flow is seamless: each chapter page shows links to move forward or backward.
-  - Navigation is accurate even if chapter order changes (as determined by metadata or file naming).
+  - Smooth navigation between chapters.
+  - Clear visual indication of reading progress.
+  - Keyboard shortcuts work as expected.
+  - Loading states provide good UX during transitions.
 
 ---
 
-### Story 5: Automated Deployment with GitHub Actions
+### Story 5: Upcoming Chapters Feature
+
+- **Objective**  
+  Show upcoming chapters that are still being written to maintain reader engagement.
+
+- **Requirements**
+
+  1. Add status tracking for chapters (published/writing).
+  2. Display "Coming Soon" badge for upcoming chapters.
+  3. Style upcoming chapters differently.
+  4. Maintain proper chapter ordering.
+  5. Merge content from filesystem and metadata.
+
+- **Acceptance Criteria**
+  - Upcoming chapters are clearly marked.
+  - Non-clickable chapters in writing state.
+  - Clear visual distinction between available and upcoming content.
+  - Proper integration with existing navigation.
+
+---
+
+### Story 6: Automated Deployment with GitHub Actions
 
 - **Objective**  
   Configure a CI/CD pipeline to build and deploy the Next.js site automatically upon commits to the main branch.
@@ -101,7 +126,7 @@ Below is a breakdown of the major development "stories" or tasks, following a st
 
 ---
 
-### Story 6: Dark/Light Mode Toggle
+### Story 7: Dark/Light Mode Toggle
 
 - **Objective**  
   Provide a user-facing toggle to switch between dark mode and light mode, leveraging Tailwind's theme configuration.
@@ -118,7 +143,7 @@ Below is a breakdown of the major development "stories" or tasks, following a st
 
 ---
 
-### Story 7 (Future): Search & Comments Integration
+### Story 8 (Future): Search & Comments Integration
 
 - **Objective**  
   Plan for future features such as search functionality and a comments section for readers.
@@ -196,7 +221,7 @@ Once the MVP is complete, we can expand to additional features (search, comments
 
 2. **UI Components**
    - `LoadingOverlay`: Reusable loading state indicator
-   - `ChapterCard`: Displays chapter information in lists
+   - `ChapterCard`: Displays chapter information in lists, including "Coming Soon" status for upcoming chapters
    - `BookHeader`: Shows book metadata and navigation
    - `ThemeToggle`: Manages dark/light mode switching
    - `CodeBlock`: Syntax highlighting for code snippets
@@ -205,11 +230,17 @@ Once the MVP is complete, we can expand to additional features (search, comments
    - `ChapterContent`: Main chapter content container
    - `BookContent`: Book details and chapter list container
 
+4. **Content Management**
+   - Chapter status tracking (published/writing)
+   - Upcoming chapters display
+   - Content merging from filesystem and metadata
+
 ### Component Organization
 - Components follow single responsibility principle
 - Shared components are extracted for reusability
 - Client/server components are properly separated
 - State management is lifted to appropriate levels
+- Content status is managed through TypeScript discriminated unions
 
 ### Best Practices
 - ESLint rules are enforced for code quality
@@ -218,3 +249,61 @@ Once the MVP is complete, we can expand to additional features (search, comments
 - Unused code is removed
 - Props are properly typed
 - Loading states are consistent
+- Content status is clearly indicated to users
+
+### Content Features
+1. **Chapter Management**
+   - Published chapters with full content
+   - Upcoming chapters marked as "Coming Soon"
+   - Clear visual distinction between available and upcoming content
+   - Proper ordering maintained across all chapter types
+
+2. **User Experience**
+   - Non-clickable upcoming chapters
+   - Visual feedback for content status
+   - Consistent styling in both light and dark modes
+   - Clear indication of writing progress
+
+3. **Content Organization**
+   - Metadata-driven chapter structure
+   - Filesystem content integration
+   - Flexible content status handling
+   - Type-safe content management
+
+### Future Stories
+
+1. **Search & Discovery**
+   - **Objective**: Implement comprehensive search functionality
+   - **Features**:
+     - Full-text search across all books and chapters
+     - Search result highlighting and previews
+     - Search suggestions and filters
+     - Tag-based content discovery
+   - **Benefits**: Improved content discoverability and user experience
+
+2. **Reader Engagement**
+   - **Objective**: Add interactive features for readers
+   - **Features**:
+     - Comment system integration
+     - Reader highlights and bookmarks
+     - Reading progress tracking
+     - Social sharing capabilities
+   - **Benefits**: Increased reader engagement and community building
+
+3. **Multi-author Support**
+   - **Objective**: Enable collaborative book creation
+   - **Features**:
+     - Author profiles and dashboards
+     - Contribution tracking
+     - Collaborative editing workflow
+     - Author-specific analytics
+   - **Benefits**: Support for team-written content and educational platforms
+
+4. **Enhanced Content Features**
+   - **Objective**: Add rich content capabilities
+   - **Features**:
+     - Interactive code examples
+     - Embedded media support
+     - Dynamic content updates
+     - Custom MDX components
+   - **Benefits**: More engaging and interactive content presentation
