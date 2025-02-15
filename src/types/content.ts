@@ -39,4 +39,5 @@ export interface ChapterFrontmatter {
 export interface ContentError {
   message: string;
   code: 'NOT_FOUND' | 'INVALID_CONTENT' | 'PARSE_ERROR';
+  details?: string;
 } 

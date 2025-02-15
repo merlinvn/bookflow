@@ -150,6 +150,7 @@ export function validateContentStructure(): ContentError | null {
     return {
       message: 'Error validating content structure',
       code: 'PARSE_ERROR',
+      details: error instanceof Error ? error.message : 'Unknown error'
     };
   }
 } 
