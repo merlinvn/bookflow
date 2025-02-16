@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Book, Chapter } from '@/types';
 import { TableOfContents } from './TableOfContents';
 import { ReadingProgress } from './ReadingProgress';
@@ -19,31 +19,7 @@ export function ChapterContent({ book, chapter, content }: ChapterContentProps) 
   const [isNavigating, setIsNavigating] = useState(false);
   const [navigatingDirection, setNavigatingDirection] = useState<'prev' | 'next' | 'menu' | null>(null);
 
-  useEffect(() => {
-    // Set last read chapter cookie
-    const setLastReadChapter = async () => {
-      try {
-        const response = await fetch('/api/last-read', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            bookId: book.id,
-            chapterId: chapter.id,
-          }),
-        });
-
-        if (!response.ok) {
-          console.error('Failed to set last read chapter');
-        }
-      } catch (error) {
-        console.error('Error setting last read chapter:', error);
-      }
-    };
-
-    setLastReadChapter();
-  }, [book.id, chapter.id]);
+  // Cookie is now handled by the server action in page.tsx
 
   return (
     <div className="relative min-h-screen">

@@ -7,14 +7,12 @@ import { BookOpen, Clock, Lock } from 'lucide-react';
 interface ChapterCardProps {
   chapter: Chapter;
   onClick: (slug: string) => void;
-  isLatestRead?: boolean;
   estimatedReadingTime?: number;
 }
 
 export default function ChapterCard({ 
   chapter, 
   onClick, 
-  isLatestRead,
   estimatedReadingTime = Math.ceil((chapter.content?.length || 0) / 1000) // Rough estimate: 1000 chars per minute
 }: ChapterCardProps) {
   const isWriting = chapter.status === 'writing';
@@ -27,9 +25,7 @@ export default function ChapterCard({
       <div className={`rounded-lg border overflow-hidden ${
         isWriting 
           ? 'border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/50' 
-          : isLatestRead
-            ? 'border-primary-400 dark:border-primary-600 bg-primary-50/50 dark:bg-primary-900/10'
-            : 'border-primary-100 dark:border-primary-900 hover:border-primary-400 dark:hover:border-primary-600 bg-white dark:bg-gray-900'
+          : 'border-primary-100 dark:border-primary-900 hover:border-primary-400 dark:hover:border-primary-600 bg-white dark:bg-gray-900'
         } transition-all duration-300 hover:shadow-lg dark:hover:shadow-primary-900/30`}>
         
         {/* Cover Image */}
@@ -67,11 +63,6 @@ export default function ChapterCard({
               }`}>
                 Chapter {chapter.order}
               </span>
-              {isLatestRead && (
-                <span className="text-xs px-2 py-0.5 rounded-full bg-primary-100 dark:bg-primary-900/50 text-primary-600 dark:text-primary-400">
-                  Currently Reading
-                </span>
-              )}
             </div>
             {!isWriting && (
               <div className="flex items-center gap-1 text-sm text-text-light dark:text-text-dark opacity-75">

@@ -1,25 +1,22 @@
 'use client';
 
-import { Book } from '@/types';
-import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { Book } from '@/types';
 import LoadingOverlay from './LoadingOverlay';
 import BookHeader from './BookHeader';
 import ChapterCard from './ChapterCard';
 
 interface BookContentProps {
   book: Book;
-  lastReadChapter?: string;
 }
 
-export default function BookContent({ book, lastReadChapter }: BookContentProps) {
+export default function BookContent({ book }: BookContentProps) {
   const router = useRouter();
   const [isNavigating, setIsNavigating] = useState(false);
 
   const handleChapterClick = (chapterId: string) => {
     setIsNavigating(true);
-    // Set last read chapter in cookie
-    document.cookie = `lastRead_${book.id}=${chapterId}; path=/; max-age=31536000`; // 1 year
     router.push(`/books/${book.id}/${chapterId}`);
   };
 
@@ -44,7 +41,6 @@ export default function BookContent({ book, lastReadChapter }: BookContentProps)
                 key={chapter.id}
                 chapter={chapter}
                 onClick={handleChapterClick}
-                isLatestRead={chapter.id === lastReadChapter}
               />
             ))}
           </div>
