@@ -67,45 +67,45 @@ Below is a breakdown of the major development "stories" or tasks, following a st
 
 ---
 
-### Story 4: Chapter Navigation & Progress
+### Story 4: Chapter Navigation & Progress ✓
 
 - **Objective**  
   Add comprehensive chapter navigation and reading progress features.
 
 - **Requirements**
 
-  1. Implement next/previous chapter navigation.
-  2. Add reading progress indicator.
-  3. Create chapter progress bar.
-  4. Add keyboard shortcuts for navigation.
-  5. Implement loading states for navigation.
+  1. ✓ Implement next/previous chapter navigation.
+  2. ✓ Add reading progress indicator.
+  3. ✓ Create chapter progress bar.
+  4. ✓ Add keyboard shortcuts for navigation.
+  5. ✓ Implement loading states for navigation.
 
 - **Acceptance Criteria**
-  - Smooth navigation between chapters.
-  - Clear visual indication of reading progress.
-  - Keyboard shortcuts work as expected.
-  - Loading states provide good UX during transitions.
+  - ✓ Smooth navigation between chapters.
+  - ✓ Clear visual indication of reading progress.
+  - ✓ Keyboard shortcuts work as expected.
+  - ✓ Loading states provide good UX during transitions.
 
 ---
 
-### Story 5: Upcoming Chapters Feature
+### Story 5: Upcoming Chapters Feature ✓
 
 - **Objective**  
   Show upcoming chapters that are still being written to maintain reader engagement.
 
 - **Requirements**
 
-  1. Add status tracking for chapters (published/writing).
-  2. Display "Coming Soon" badge for upcoming chapters.
-  3. Style upcoming chapters differently.
-  4. Maintain proper chapter ordering.
-  5. Merge content from filesystem and metadata.
+  1. ✓ Add status tracking for chapters (published/writing).
+  2. ✓ Display "Coming Soon" badge for upcoming chapters.
+  3. ✓ Style upcoming chapters differently.
+  4. ✓ Maintain proper chapter ordering.
+  5. ✓ Merge content from filesystem and metadata.
 
 - **Acceptance Criteria**
-  - Upcoming chapters are clearly marked.
-  - Non-clickable chapters in writing state.
-  - Clear visual distinction between available and upcoming content.
-  - Proper integration with existing navigation.
+  - ✓ Upcoming chapters are clearly marked.
+  - ✓ Non-clickable chapters in writing state.
+  - ✓ Clear visual distinction between available and upcoming content.
+  - ✓ Proper integration with existing navigation.
 
 ---
 
@@ -143,19 +143,120 @@ Below is a breakdown of the major development "stories" or tasks, following a st
 
 ---
 
-### Story 8 (Future): Search & Comments Integration
+### Story 8: Enhanced Reading Experience
 
 - **Objective**  
-  Plan for future features such as search functionality and a comments section for readers.
+  Improve the reading experience with advanced features and user preferences.
 
-- **Requirements (not in MVP)**
+- **Requirements**
 
-  1. **Search**: Add a search box to locate chapters or keywords across books.
-  2. **Comments**: Integrate a comment system (Disqus, Gitalk, or a custom solution).
-  3. Ensure the codebase architecture allows for smooth integration without major refactoring.
+  1. Reading Progress Tracking
+     - User-specific reading progress
+     - Cross-device synchronization
+     - Reading history and bookmarks
+     - Last read position restoration
+
+  2. Content Customization
+     - Font size adjustment
+     - Line spacing options
+     - Reading mode preferences
+     - Custom color themes
+
+  3. Interactive Features
+     - Text highlighting
+     - Note-taking capability
+     - Sharing specific passages
+     - Reading time estimates
+
+  4. Accessibility
+     - Screen reader optimization
+     - Keyboard navigation improvements
+     - High contrast mode
+     - Dyslexic-friendly font option
 
 - **Acceptance Criteria**
-  - Not immediately implemented—document how it will fit into the system once prioritized.
+  - Reading progress persists across sessions
+  - User preferences are saved
+  - Smooth UI for customization
+  - Improved accessibility score
+
+---
+
+### Story 9: Content Management System
+
+- **Objective**  
+  Create a streamlined content management system for authors.
+
+- **Requirements**
+
+  1. Author Dashboard
+     - Content statistics
+     - Reader engagement metrics
+     - Writing progress tracking
+     - Publication scheduling
+
+  2. Content Editor
+     - Rich text MDX editor
+     - Live preview
+     - Asset management
+     - Version control
+
+  3. Workflow Management
+     - Draft/Review/Publish states
+     - Collaborative editing
+     - Content approval process
+     - Automated publishing
+
+  4. Analytics
+     - Reading patterns
+     - Popular sections
+     - User engagement
+     - Performance metrics
+
+- **Acceptance Criteria**
+  - Intuitive author interface
+  - Reliable content versioning
+  - Automated publishing workflow
+  - Comprehensive analytics
+
+---
+
+### Story 10: Community Features
+
+- **Objective**  
+  Build community features to increase reader engagement.
+
+- **Requirements**
+
+  1. Comments System
+     - Thread-based discussions
+     - Moderation tools
+     - User notifications
+     - Rich text formatting
+
+  2. User Profiles
+     - Reading history
+     - Favorite books/chapters
+     - Achievement system
+     - Social connections
+
+  3. Social Features
+     - Book clubs
+     - Reading challenges
+     - Shared annotations
+     - Group discussions
+
+  4. Content Discovery
+     - Personalized recommendations
+     - Reading lists
+     - Similar content suggestions
+     - Tag-based exploration
+
+- **Acceptance Criteria**
+  - Active community engagement
+  - Effective moderation tools
+  - Personalized user experience
+  - Seamless social integration
 
 ---
 
