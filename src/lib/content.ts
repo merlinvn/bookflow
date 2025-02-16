@@ -6,6 +6,8 @@ import 'server-only';
 
 const CONTENT_DIR = path.join(process.cwd(), 'content');
 
+const SUPPORTED_IMAGE_FORMATS = ['webp', 'jpg', 'png'] as const;
+
 /**
  * Get all books from the content directory
  */
@@ -49,6 +51,23 @@ export async function getBook(bookId: string): Promise<Book | null> {
 }
 
 /**
+ * Find the first existing cover image in supported formats
+ */
+async function findChapterCover(bookId: string, chapterOrder: number): Promise<string | undefined> {
+  for (const format of SUPPORTED_IMAGE_FORMATS) {
+    const coverPath = `/books/${bookId}/assets/chapter-${chapterOrder}/cover.${format}`;
+    const publicPath = path.join(process.cwd(), 'public', coverPath);
+    try {
+      await fs.access(publicPath);
+      return coverPath;
+    } catch {
+      continue;
+    }
+  }
+  return undefined;
+}
+
+/**
  * Get all chapters for a specific book
  */
 export async function getChapters(bookId: string): Promise<Chapter[]> {
@@ -74,6 +93,9 @@ export async function getChapters(bookId: string): Promise<Chapter[]> {
         const frontmatter = data as ChapterFrontmatter;
         const chapterId = path.basename(file, '.mdx');
 
+        // Find chapter cover in supported formats
+        const coverImage = await findChapterCover(bookId, frontmatter.order);
+
         return {
           id: chapterId,
           bookId,
@@ -82,6 +104,7 @@ export async function getChapters(bookId: string): Promise<Chapter[]> {
           order: frontmatter.order,
           slug: chapterId,
           content: mdxContent,
+          coverImage,
           status: 'published'
         } as Chapter;
       }));

@@ -17,13 +17,15 @@ export async function generateStaticParams() {
   const params = [];
 
   for (const book of books) {
-    const bookData = await getBook(book.id);
-    if (bookData?.chapters) {
-      for (const chapter of bookData.chapters) {
-        params.push({
-          bookId: book.id,
-          chapterId: chapter.id,
-        });
+    const fullBook = await getBook(book.id);
+    if (fullBook?.chapters) {
+      for (const chapter of fullBook.chapters) {
+        if (chapter.status !== 'writing') {
+          params.push({
+            bookId: book.id,
+            chapterId: chapter.id,
+          });
+        }
       }
     }
   }

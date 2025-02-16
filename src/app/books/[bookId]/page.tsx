@@ -1,6 +1,7 @@
 import { getBook, getBooks } from '@/lib/content';
 import { notFound } from 'next/navigation';
 import BookContent from '@/components/BookContent';
+import { cookies } from 'next/headers';
 
 interface Props {
   params: Promise<{
@@ -23,5 +24,14 @@ export default async function BookPage({ params }: Props) {
     notFound();
   }
 
-  return <BookContent book={book} />;
+  // Get the last read chapter from cookies
+  const cookieStore = await cookies();
+  const lastReadChapter = cookieStore.get(`lastRead_${bookId}`)?.value;
+
+  return (
+    <BookContent 
+      book={book} 
+      lastReadChapter={lastReadChapter}
+    />
+  );
 } 
