@@ -3,7 +3,7 @@
   "title": "Sao Mai và Bí Mật Của Rừng Xanh",
   "description": "Hành trình phiêu lưu của cô bé Sao Mai cùng những người bạn kỳ diệu trong khu rừng cổ tích, nơi cô học được những bài học quý giá về tình bạn, lòng dũng cảm và bảo vệ thiên nhiên.",
   "author": "BookFlow Team",
-  "coverImage": "https://picsum.photos/800/600",
+  "coverImage": "/books/sao-mai/assets/cover.png",
   "tags": ["vietnamese", "children", "adventure", "nature", "friendship"],
   "publishedAt": "2024-03-15T00:00:00.000Z",
   "updatedAt": "2024-03-15",

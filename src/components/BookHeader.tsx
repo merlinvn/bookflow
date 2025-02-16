@@ -25,12 +25,14 @@ export default function BookHeader({ book }: BookHeaderProps) {
 
       {/* Book Info */}
       <div className="flex flex-col md:flex-row gap-8 mb-12">
-        <div className="relative w-full md:w-1/3 h-64 md:h-auto">
+        <div className="relative w-full md:w-1/3 aspect-square">
           <Image
             src={book.coverImage}
             alt={book.title}
             fill
+            sizes="(min-width: 768px) 33vw, 100vw"
             className="object-cover rounded-lg"
+            priority
           />
         </div>
         <div className="md:w-2/3">
