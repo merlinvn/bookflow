@@ -1,0 +1,127 @@
+# Chương 2: Quán Rượu Thịt Người
+
+Ba ngày sau, Trần Sát đến quán rượu Thái Bình ở đầu trấn.
+
+Quán nhỏ, tối, mùi rượu chua lẫn mùi mỡ nóng. Vách ván mục nát, sàn đất lầy lội đầy vết bùn đen. Ánh đèn dầu leo lét, tạo những bóng đen quái dị trên mặt những tên khách đang ngồi nhậu. Tiếng cười nói ồn ào, tiếng chén đụng nhau loảng xoảng. Không ai để ý đến gã đàn ông cao lớn, cơ bắp cuồn cuộn, khuôn mặt lạnh như đá vừa bước vào.
+
+Trần Sát chọn bàn góc, lưng dựa vào vách. Hắn đặt con dao bọc vải dầu xuống bàn, nhưng không buông tay khỏi nó.
+
+"Khách muốn dùng gì?" Tiểu Nhị mặt đầy mụn nhọt tiến lại, giọng hờ hững.
+
+"Thịt." Trần Sát nói, giọng trầm đục.
+
+"Thịt gì? Thịt lợn, thịt gà, hay thịt..."
+
+"Thịt heo sữa. Món đắt nhất."
+
+Tiểu Nhị ngẩng mặt lên, đôi mắt lóe lên thứ gì đó. "Món đó... giá không rẻ đâu."
+
+Trần Sát rút một thỏi bạc nhỏ ném lên bàn. Tiểu Nhị cười nham hiểm, quay lưng đi.
+
+Trong lúc chờ, Trần Sát quan sát quan. Mười hai người đàn ông, đều mặt mũi hung ác, tay chân thô kệch. Eo đeo dao găm, song đao. Họ cười to, uống ồn ào, nhưng đôi mắt luôn liếc về phía cửa, về phía những khách mới vào. Đây không phải quán rượu bình thường. Đây là sào huyệt.
+
+Món thịt được đem lên. Một đĩa lớn, thịt cắt từng miếng vuông vức, da giòn vàng ươm, mỡ trắng ngần. Mùi thơm nồng nặc hương liệu - đinh hương, hồi, quế - quá đậm, như muốn che đi một thứ mùi khác.
+
+Trần Sát cầm đũa, gắp một miếng, đưa lên mũi ngửi. Hắn đóng băng.
+
+Kết cấu sai.
+
+Thớ thịt này không phải của lợn. Nó mịn hơn, dày hơn, những sợi cơ xếp theo chiều dọc đặc trưng. Và mùi... dưới lớp hương liệu nồng nặc, hắn ngửi thấy mùi tanh quen thuộc. Mùi của máu người.
+
+Hắn đã ngửi mùi này suốt mười năm qua mỗi đêm, khi những "con lợn" được chở đến nhà hắn.
+
+Trần Sát đặt đũa xuống. Hắn nhìn quanh quán. Những tên đàn ông đang ăn, nhai nhả, nuốt. Miệng đầy mỡ. Không ai biết họ đang ăn gì.
+
+Hay là họ biết?
+
+Một tên to con, sẹo chéo ngang mặt, đang ngồi bàn bên cạnh cười ồ lên. "Hôm nay hàng tươi lắm! Chắc mới vào chiều!"
+
+"Bên Lạng Châu gửi xuống à?" Một tên khác hỏi.
+
+"Ừ, phân tích thịt đùi. Ngon nhất là thịt vai, nhưng đắt không dám ăn!"
+
+Trần Sát cầm chặt cán dao trong vải.
+
+"Này khách, sao không ăn?" Tiểu Nhị đi qua, giọng đầy nghi ngờ.
+
+"Ngon lắm." Trần Sát nói. "Gọi thêm một bình rượu."
+
+Tiểu Nhị quay đi. Trần Sát đứng dậy, bước sang bàn của gã đầu bếp đang ngồi hút thuốc ở góc. Hắn cúi người, giọng thấp: "Hỏi một việc. Đường đi Phân Đà Bắc, từ đây thế nào?"
+
+Gã đầu bếp nhìn hắn, đôi mắt nhỏ li ti nheo lại. "Sao hỏi?"
+
+"Có việc."
+
+"Có việc gì mà đi chỗ đó?" Gã phun một làn khói vào mặt Trần Sát. "Chỗ đó chỉ có kẻ chết... vào."
+
+"Vậy à?" Trần Sát cười, một nụ cười không có hồn. "Thì ta đúng người rồi."
+
+Gã đầu bếp định đứng dậy thì Trần Sát đã nắm chặt cổ áo gã, đè xuống bàn. Dao đã rời khỏi vải, mũi dao chọc vào hông gã.
+
+"Nói. Đường đi. Hay là ta mổ ngươi ngay đây, xem ngươi ăn thịt người bao lâu rồi."
+
+"Địt!—" Gã đầu bếp kêu lên nhưng âm thanh bị nghẹt lại khi dao chọc sâu hơn. Máu thấm qua áo. Những tên lục lâm ở các bàn quay lại, tay tới vũ khí.
+
+Trần Sát không nhìn họ. Hắn chỉ nhìn gã đầu bếp. "Lần cuối. Đường đi đâu?"
+
+"Bắc... Bắc đường rừng... qua suối Đá Đen... có... có cổng đá..."
+
+"Ai canh?"
+
+"Phân... Phân đà chủ... Lý... Lý Độc Nhãn..."
+
+Trần Sát rút dao ra, để gã đầu bếp rơi xuống đất, rên rỉ. Máu chảy đầm đìa.
+
+Bây giờ, mười hai đôi mắt nhìn hắn. Mười hai tên lục lâm đứng dậy, rút dao, rút kiếm. Họ bao vây hắn từ mọi phía.
+
+"Cậu thật ngây thơ," tên sẹo mặt nói, giọng chậm rãi. "Tưởng vào đây hỏi đường là xong sao?"
+
+Trần Sát quay người, nhìn thẳng vào mắt gã. "Ta không ngây thơ. Ta biết các ngươi sẽ không để ta ra khỏi đây sống."
+
+"Vậy còn vào làm gì?"
+
+"Vì ta cần máu của các ngươi."
+
+Không ai hiểu câu nói đó. Nhưng họ không cần hiểu.
+
+Tiểu Nhị đã khóa cửa từ trong. Ánh đèn dầu rung rinh. Mùi máu bắt đầu lan tỏa.
+
+Tên sẹo mặt lao tới trước, song đao chém ngang. Trần Sát không né. Hắn bước thẳng vào, để lưỡi dao cắt vào vai hắn, rồi dùng tay trái nắm chặt cổ tay gã. Dao cốt trong tay phải hắn chém thẳng vào cổ.
+
+Máu phun. Động mạch cổ bị chém đứt, máu bắn tung tóe. Tên sẹo mặt đổ xuống, tay ôm cổ, mắt trợn trừng.
+
+Hắn chưa chết ngay. Hắn nằm co giật trên mặt đất, máu chảy thành vũng.
+
+Chín tên còn lại do dự. Họ nhìn nhau. Rồi hai tên xông tới cùng lúc, một bên trái, một bên phải.
+
+Trần Sát quay người, dao chém xuống. Lưỡi dao băm vào xương quai hàm tên bên trái, kẹt lại. Hắn dùng sức kéo, xương gãy, nửa mặt tên đó bị xé toạc. Tên bên phải đâm kiếm vào hông hắn. Kiếm đâm xuyên qua, lộ ra phía bên kia.
+
+Trần Sát không kêu. Hắn nắm lấy lưỡi kiếm bằng tay không, kéo tên đó lại gần, rồi húc đầu vào mặt gã. Xương mũi gãy, gã ngã ngửa ra sau. Trần Sát rút kiếm ra khỏi hông mình, quay lại đâm xuyên vào ngực tên đó.
+
+Bảy tên còn lại sợ hãi. Họ lùi lại. Nhưng cửa đã khóa. Không có đường thoát.
+
+Trần Sát nhìn họ. Máu chảy từ vai, từ hông hắn. Nhưng hắn vẫn đứng vững. Đôi mắt hắn không còn là mắt người. Đó là mắt của một con thú đói.
+
+"Chạy đi," một tên thì thào.
+
+Nhưng đã muộn.
+
+Trần Sát lao vào đám họ như một con quỷ. Dao chém, cắt, xẻ. Máu bắn lên trần, lên tường, lên những chiếc bàn. Tiếng xương gãy, tiếng da thịt xé toạc, tiếng thét đau đớn vang lên rồi tắt dần.
+
+Năm phút sau, quán rượu im lặng.
+
+Mười hai xác nằm la liệt. Máu ngập cả sàn. Trần Sát đứng giữa, cơ thể đầy vết thương nhưng vẫn thở đều. Hắn nhìn xuống con dao trong tay. Lưỡi dao đỏ thẫm, nhưng có gì đó khác. Dao nóng. Nó đang rung. Như thể nó đang... uống máu.
+
+Hắn nhớ lại lời gã đầu bếp: "Kẻ chết vào."
+
+Hắn cúi xuống xác tên sẹo mặt. Máu vẫn còn ấm. Hắn dùng tay nhúng vào vũng máu, rồi đưa lên mũi ngửi. Mùi tanh nồng. Khác với máu thường. Đây là máu người luyện võ. Máu có nội khí.
+
+Và hắn khát máu này.
+
+Trần Sát đứng dậy, bước ra khỏi quán. Ánh trăng sáng lạnh lẽo chiếu xuống. Hắn không nhìn lại. Hàng chục vết thương trên người hắn đang từ từ ngừng chảy máu.
+
+Phía Bắc, đường rừng, suối Đá Đen.
+
+Hắn đang đến.
+
+Và hắn sẽ giết hết tất cả.

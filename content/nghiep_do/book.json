@@ -1,0 +1,34 @@
+{
+  "id": "sao-mai",
+  "title": "HUYẾT NGỤC BÁT THẬP BÁT: NGHIỆP ĐỒ",
+  "description": "Test",
+  "author": "BookFlow Team",
+  "coverImage": "",
+  "tags": ["vietnamese"],
+  "publishedAt": "2025-12-16T00:00:00.000Z",
+  "updatedAt": "2025-12-16",
+  "chapters": [
+    {
+      "id": "chapter1",
+      "title": "Máu Nhuộm Chiều Tà",
+      "description": "",
+      "slug": "01-mau-nhuom-chieu-ta",
+      "order": 1
+    },
+    {
+      "id": "chapter2",
+      "title": "Quán Rượu Thịt Người",
+      "description": "",
+      "slug": "02-quan-ruou-thit-nguoi",
+      "order": 2
+    },
+    {
+      "id": "chapter3",
+      "title": "Rừng Xác Treo",
+      "description": "",
+      "slug": "03-rung-xac-treo",
+      "order": 3
+    }
+  ]
+}
+

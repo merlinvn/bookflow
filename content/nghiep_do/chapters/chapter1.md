@@ -1,0 +1,85 @@
+# Chương 1: Máu Nhuộm Chiều Tà
+
+Chiều tà nhuộm đỏ bầu trời, nhưng không phải màu đỏ của hoàng hôn bình thường. Đó là màu đỏ thẫm, sền sệt, như máu đã khô dính trên lưỡi dao. Mây đen cuồn cuộn từ phía Bắc, mang theo mùi tanh nồng của thịt thối.
+
+Trần Sát bước trên con đường đất về làng, vai vác bao vải dầu nặng trịch. Bên trong là con dao mổ lợn - Cốt Đao - cán xương, lưỡi thép đen. Hắn vừa mổ xong năm con "lợn" cho quán thịt đầu trấn. Công việc quen thuộc. Chọc tiết, lột da, tách xương, băm thịt. Mười năm làm nghề, tay hắn không bao giờ run.
+
+Nhưng hôm nay có gì đó khác.
+
+Những con "lợn" hôm nay kêu la quá giống người. Tiếng kêu đó vang vọng trong đầu hắn suốt cả buổi chiều, ngay cả khi hắn đã chặt đứt khí quản chúng. Và mùi máu... nó không giống máu lợn. Nó đặc hơn. Mặn hơn. Nồng hơn.
+
+Khi hắn đến gần nhà, hắn dừng lại.
+
+Cửa mở toang. Gió thổi qua, đưa theo mùi máu tươi. Không phải mùi máu của lợn. Là mùi máu người.
+
+Trần Sát không chạy. Hắn bước đều đặn, từng bước một, như những lần hắn bước vào lò mổ. Tay hắn rút con dao ra khỏi bao vải. Lưỡi dao vẫn còn dính máu khô từ buổi sáng.
+
+Bên trong ngôi nhà tranh, ánh sáng cuối ngày chiếu qua khe vách, tạo những vệt sáng đỏ lờ mờ.
+
+Vợ hắn, Lệ Nương, bị treo ngược lơ lửng trên xà nhà. Dây thừng thô siết chặt hai mắt cá, để cô ta lủng lẳng như một con thú vừa mổ. Nhưng điều kinh hoàng không phải ở đó.
+
+Da lưng cô ta đã bị lột.
+
+Không phải lột bừa bãi. Ai đó đã dùng một con dao rất sắc, rất chính xác, để tách da khỏi thịt thành từng mảnh vuông vức. 88 mảnh. Mỗi mảnh khoảng bằng ngón tay, xếp gọn gàng thành tám hàng, mười một mảnh mỗi hàng, ngay bên dưới xác cô ta. Mỗi mảnh da đều nhỏ giọt máu xuống sàn, tạo thành vũng đỏ thẫm.
+
+Thịt và gân lộ ra, đỏ au, trắng ngà, ánh lên dưới ánh chiều tà. Máu chảy đều từ những vết rạch, nhỏ giọt từ đầu tóc cô ta chạm đất.
+
+Trên tường vách đất, ai đó đã dùng ngón tay nhúng máu vẽ một vòng tròn lớn. Trong vòng tròn là 88 vết chấm nhỏ, xếp thành hình bát giác. Mỗi vết chấm đều đặn, đẹp đẽ, như một bản đồ.
+
+Con trai hắn nằm trên bàn thờ.
+
+Đầu cậu bé bị chặt rời, đặt ngay chính giữa chiếc đĩa sứ trắng. Đôi mắt vẫn mở to, nhìn chằm chằm lên trần nhà. Cổ bị chặt sạch, không có vết răng cưa, chỉ một nhát dứt khoát. Thân thể cậu nằm dưới đất, tay chân duỗi thẳng, như một con búp bê bị vứt bỏ.
+
+Trần Sát đứng yên. Không khóc. Không kêu. Không run.
+
+Hắn chỉ đứng đó, nhìn.
+
+Sau một lúc lâu, hắn bước vào. Dép rơm giậm lên vũng máu, phát ra tiếng lép nhép. Hắn ngồi xuống ngay dưới xác vợ mình, lưng dựa vào vách. Rồi hắn lấy viên đá mài nhỏ ra khỏi túi.
+
+Hắn bắt đầu mài dao.
+
+Kèn... kẹt... Kèn... kẹt...
+
+Tiếng mài dao đều đặn, chậm rãi, át cả tiếng gió rít bên ngoài. Lưỡi dao lạnh lẽo, từng nhát mài cọ xát lên đá, tạo ra những tia lửa nhỏ. Máu khô văng ra thành bụi mịn.
+
+Kèn... kẹt... Kèn... kẹt...
+
+Máu từ xác vợ hắn nhỏ giọt xuống vai hắn, xuống tóc hắn, nhưng hắn không lau. Hắn chỉ mài dao, mài mãi, như thể đang mài vào chính cái đau của mình.
+
+Một giờ trôi qua.
+
+Trời tối hẳn. Trăng lên, chiếu vào qua khe cửa, tạo nên những vệt sáng trắng xanh trên nền nhà đầy máu.
+
+Trần Sát dừng tay. Hắn chạm ngón tay vào lưỡi dao. Máu chảy ra. Dao đã sắc đến mức có thể chẻ tóc.
+
+Hắn nhìn xuống sàn. Dưới những mảnh da của vợ hắn, có một thứ gì đó lấp lánh. Hắn cúi xuống, lật mảnh da ra.
+
+Một lệnh bài đồng đen.
+
+Hắn nhặt lên, lau máu dính trên mặt bài. Mặt trước khắc hai chữ Hán: "Thương Minh". Mặt sau khắc: "Phân Đà Bắc".
+
+Hắn nhìn lệnh bài thật lâu. Ngón tay hắn cọ lên ba chữ "Phân Đà Bắc", cảm nhận độ sâu của nét khắc.
+
+Thương Minh Hội.
+
+Hắn đã nghe về chúng. Một tổ chức buôn bán người, buôn bán thịt, buôn bán mạng. Chúng hoạt động ở biên giới, chuyên "chế biến" những kẻ tội đồ, những kẻ nợ nần, những đứa trẻ mồ côi.
+
+Phân Đà Bắc là một trong những trại chế biến lớn nhất của chúng.
+
+Trần Sát đứng dậy. Hắn nhìn xác vợ mình lần cuối. Lệ Nương. Cô đã sống với hắn mười năm. Cô nấu cơm cho hắn mỗi tối, vá áo cho hắn mỗi khi rách, ôm hắn mỗi khi hắn mơ thấy ác mộng.
+
+Nhưng bây giờ, tất cả chỉ còn là thịt treo lơ lửng.
+
+Hắn quay sang nhìn con trai. Cậu bé năm tuổi. Chưa biết đọc chữ, chưa biết cầm dao, chưa biết gì về cái ác của thế gian.
+
+Nhưng giờ cậu không cần biết nữa.
+
+Trần Sát bước ra khỏi nhà. Hắn không đóng cửa. Gió thổi vào, làm rung những mảnh da trên sàn, như những cánh bướm khô.
+
+Trên tay hắn, con dao đã sắc đến mức phản chiếu ánh trăng như một tấm gương.
+
+Hắn bước về phía Bắc.
+
+Không vội. Không chậm. Chỉ bước đều đặn, như những lần hắn bước vào lò mổ.
+
+Sát khí bắt đầu ngấm vào dao. Dao nóng lên. Cán xương rung nhẹ, như thể nó đang... khao khát.
